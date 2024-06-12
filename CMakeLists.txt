@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.15...3.26)
 
 project(brc_nanobind LANGUAGES CXX)
 
+# Set C++ standard to C++23
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 if (NOT SKBUILD)
   message(WARNING "\
   This CMake file is meant to be executed using 'scikit-build'. Running
@@ -53,6 +58,8 @@ nanobind_add_module(
 
   # Source code goes here
   src/brc_nanobind_ext.cpp
+  src/row_parser.cpp
+  src/row_parser.h
 )
 
 # Install directive for scikit-build-core
