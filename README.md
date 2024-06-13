@@ -18,7 +18,8 @@ Installation
 ------------
 
 1. Clone this repository
-2. Run `pip install ./1brc_nanobind`
+2. Run `cd 1brc_nanobind/`
+3. Install package `pip install .`
 
 Afterwards, you should be able to issue the following commands (shown in an
 interactive Python session):
@@ -32,9 +33,17 @@ interactive Python session):
 Usage
 ------------
 
-<!-- TODO -->
+```
+python benchmark.py [-h] data_path
+```
 
-Installation
+Example with provided [measurements_100k.txt](./data/measurements_100k.txt)
+
+```
+python benchmark.py data/measurements_100k.txt
+```
+
+Uninstallation
 ------------
 
 1. Run `pip uninstall brc-nanobind`

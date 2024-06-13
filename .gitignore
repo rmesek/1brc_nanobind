@@ -9,3 +9,4 @@ build
 .vs
 .venv
 /data/measurements.txt
+/data/measurements_1b.txt

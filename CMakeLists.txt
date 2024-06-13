@@ -58,8 +58,8 @@ nanobind_add_module(
 
   # Source code goes here
   src/brc_nanobind_ext.cpp
-  src/row_parser.cpp
-  src/row_parser.h
+  src/parser.cpp
+  src/parser.h
 )
 
 # Install directive for scikit-build-core
